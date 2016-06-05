@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".EditMessageActivity" >
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="8dp"
+         android:gravity="center_horizontal"
+         android:background="@color/light_red"
+         android:orientation="horizontal" >
+
+        <com.example.admin.multisms.com.com.hotmoka.multisms.views.MessageEditText
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:ems="10"
+            android:hint="@string/hint"
+            android:inputType="textCapSentences|textMultiLine|textShortMessage" />
+
+        <Button
+            android:id="@+id/sendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:text="@string/send_to" />
+
+   	 </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center_horizontal"
+         android:orientation="horizontal"
+         android:paddingTop="5dp" >
+
+   	   	<Button
+   	   	    android:id="@+id/addName"
+   	   	    style="?android:attr/buttonStyleSmall"
+   	   	    android:layout_width="wrap_content"
+   	   	    android:layout_height="wrap_content"
+            android:visibility="gone"
+   	   	    android:text="@string/add_name" />
+	
+	    <Button
+	        android:id="@+id/addSurname"
+            android:visibility="gone"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/add_surname" />
+
+    </LinearLayout>
+
+</LinearLayout>
